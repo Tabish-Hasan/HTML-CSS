@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#left
+{
+  width: 60%;
+  height: 100vh;
+  float: left;
+}
+
+#right
+{
+  width: 40%;
+  height: 100vh;
+  float: right;
+}
+#video_player
+{
+  width: 100%;
+  height: auto;
+}
+
+#control
+{
+  width: 100%;
+  height: 100px;
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#progress_box
+{
+  width: 100%;
+  height: 12px;
+  margin-bottom: 12px;
+  background-color: blue;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#progress_bar
+{
+  width: 0%;
+  height: 12px;
+  background:  red; 
+  border-radius: 25px;
+}
+
+#play_btn
+{
+  font-size: 45px;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+#play_btn:hover
+{
+  color: black;
+}
+
+#left_btn,#right_btn
+{
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#left_btn:hover,#right_btn:hover
+{
+  color: black;
+}
+
+#v_timing
+{
+  font-family:cursive;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-left: 10px;
+}
+
+#volume,#full_screen,#speed
+{
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+#volume:hover,#setting:hover,#full_screen:hover,#speed:hover
+{
+  color: black;
+}
+
+#timing,#play_tools,#other_tools
+{
+  width: 33.33%;
+}
+#other_tools
+{
+  display: flex;
+  justify-content: flex-end;
+}
+#play_tools
+{
+  display: flex;
+  justify-content: center;
+}
+
+#top
+{
+  width: 100%;
+  height: 17%;
+  background-color: black;
+  padding: 5px;
+  position: relative;
+}
+#top h3
+{
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#search
+{
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  border: 1px solid white;
+  padding: 5px;
+  margin-top: 10px;
+  outline: none;
+
+}
+
+#open_video_box_btn
+{
+  font-size: 40px;
+  color: yellow;
+  cursor: pointer;
+  position: absolute;
+  top: 1px;
+  right: 15px;
+}
+
+#add_video_box
+{
+  width: 80%;
+  height: auto;
+  border-radius: 80px 0px 80px 40px;
+  background-color: brown;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: none;
+}
+
+#add_video_box h2
+{
+  font-size: 30px;
+  color: white;
+  font-family: 'Ubuntu',sans-serif;
+  margin-bottom: 3px; 
+  text-align: center;
+}
+
+#video_name,#video_link
+{
+  width: 95%;
+  font-family: 'Ubuntu',sans-serif;
+  border: 1px solid black;
+  border-radius: 80px;
+  padding: 5px;
+  margin-top: 20px;
+  
+}
+
+#add_video_btn
+{
+  width: 70px;
+  font-size: 30px;
+  font-family: monospace;
+  background-color: white;
+  border-radius: 80px;
+  margin-top: 30px;
+  margin-left: 160px;
+  padding: 3px;
+  border: none;
+  outline: none;
+}
+
+#bottom
+{
+  width: 100%;
+  height: 70%;
+  padding: 10px;
+  overflow: auto;
+}
+
+#main_video_box
+{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #f78d03;
+}
+#playlist_video_name
+{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Ubuntu',sans-serif;
+  padding: 3px;
+}
+
+#video_play_btn
+{
+  width: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Ubuntu',sans-serif;
+  padding: 5px;
+  color: white;
+  background-color: #0563fa;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+#video_delete_btn
+{
+  width: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Ubuntu',sans-serif;
+  padding: 5px;
+  color: white;
+  background-color: #f81905;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+#video_delete_btn:hover
+{
+  color: black;
+  background-color: #ce5347;
+}
+
+#vol_control,#speed_control
+{
+  width: 70px;
+  height: 10px;
+  appearance: none;
+  outline: none;
+  transform: rotate(270deg);
+  background-color: rgb(26, 197, 26);
+  border-radius: 35px;
+  position: absolute;
+  top: -43px;
+  left: -17px;
+}
+#speed_control
+{
+  width: 70px;
+  height: 10px;
+  appearance: none;
+  outline: none;
+  transform: rotate(270deg);
+  background-color: rgb(26, 197, 26);
+  border-radius: 35px;
+  position: absolute;
+  top: -43px;
+  left: -10px;
+}
+
+#vol_control::-webkit-slider-thumb
+{
+  width: 13px;
+  height: 12px;
+  appearance: none;
+  background-color: red;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#speed_control::-webkit-slider-thumb
+{
+  width: 13px;
+  height: 12px;
+  appearance: none;
+  background-color: red;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#vol_box,#speed_box
+{
+  width: fit-content;
+  position: relative;
+}
+
+
+/* Coding For Responsive...*/ 
+@media(max-width: 375px)
+{
+  #top
+  {
+    margin-top: 10px;
+  }
+  
+  #v_timing
+  {
+    font-size: 10px;
+  }
+  #volume,#full_screen,#speed
+{
+  font-size: 17px;
+  margin-right: 10px;
+}
+#left_btn,#right_btn
+{
+  font-size: 25px;
+}
+#play_btn
+{
+  font-size: 30px;
+}
+}
+
+@media(max-width: 470px)
+{
+  #top
+  {
+    margin-top: 10px;
+  }
+  
+  #v_timing
+  {
+    font-size: 15px;
+  }
+  #volume,#full_screen,#speed
+{
+  font-size: 20px;
+  margin-right: 12px;
+}
+#left_btn,#right_btn
+{
+  font-size: 30px;
+}
+#play_btn
+{
+  font-size: 35px;
+}
+}
+
+@media(max-width: 840px)
+{
+
+  #v_timing
+  {
+    font-size: 15px;
+  }
+
+  #volume,#full_screen,#speed
+{
+  font-size: 25px;
+}
+
+#left_btn,#right_btn
+{
+  font-size: 35px;
+}
+
+#play_btn
+{
+  font-size: 40px;
+}
+}
+
+@media(max-width: 769px)
+{
+  #top
+  {
+    margin-top: 10px;
+  }
+
+  #left
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  #right
+  {
+    width: 100%;
+    height: auto;
+  }
+}

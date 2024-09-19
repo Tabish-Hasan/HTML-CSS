@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background: linear-gradient(to right, #03f7ea, #e6f703);
+  overflow: hidden;
+}
+
+#profile_box
+{
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  border-radius: 0px 0px 200px 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  
+}
+
+#profile_pic
+{
+  width: 180px;
+  height: 180px;
+  border: 5px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 15px blue;
+  margin: 40px 0px 0px 55px;
+  /*background-image: url(images/sayyed.jpg);*/
+  background-size: cover;
+  background-position: center;
+}
+
+#new_contact
+{
+  font-size: 50px;
+  position: fixed;
+  bottom: 70px;
+  right: 80px;
+  cursor: pointer;
+  color: brown;
+}
+
+#contact_bg
+{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#add_contact_box
+{
+  width: 40%;
+  height: auto;
+  border-radius: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 30px blue; 
+  padding: 20px;
+  margin-top: 100px;
+  
+}
+#add_contact_box h1
+{
+  color: brown;
+  text-align: center;
+  font-size: 40px;
+  font-family: Algerian; 
+}
+
+hr
+{
+  margin-bottom: 40px;
+}
+
+
+#c_name, #c_num
+{
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid brown;
+  border-left: 5px solid brown;
+  border-right: 5px solid brown;
+}
+
+#add, #close
+{
+  width: 100px;
+  background-color: brown;
+  padding: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer; 
+  border-radius: 50%;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 20px;
+}
+
+#main_all_contact_box
+{
+  width: 40%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#contact_header
+{
+  width: 100%;
+  height: 25%;
+}
+
+#contact_header h1
+{
+  font-size: 45px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#search
+{
+  width: 100%;
+  font-size: 25px;
+  font-family:cursive;
+  padding: 10px;
+  padding-left: 3px;
+  margin-top: 15px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+#all_contact_box
+{
+  width: 100%;
+  height: 75%;
+  padding: 20px;
+  overflow-y: scroll;
+}
+#all_contact_box::-webkit-scrollbar
+{
+  width: 5px;
+}
+#all_contact_box::-webkit-scrollbar-track
+{
+  background-color: inherit;
+}
+#all_contact_box::-webkit-scrollbar-thumb
+{
+  background-color: brown;
+}
+
+
+#contact
+{
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px blue;
+  background-color: white;
+  margin: 15px 0;
+}
+
+
+.contact_name
+{
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 5px 0;
+}
+.contact_num
+{
+  font-size: 25px;
+  margin-top: -37px;
+}
+
+
+#tool
+{
+  width: 25%;
+  float: right;
+  margin-top: -20px;
+}
+#tool i 
+{
+  font-size: 20px;
+  margin: 10px;
+}
+
+/*Responsive Coding Start */
+
+@media(max-width:1025px)
+{
+  #tool
+  {
+    margin-top: -40px;
+    width: 35px;
+  }
+}
+
+@media(max-width:769px)
+{
+  #main_all_contact_box
+  {
+    width: 50%;
+  }
+
+  #all_contact_box
+  {
+    margin-left: 60px;
+  }
+
+  #add_contact_box
+{
+  width: 50%;
+}
+
+#add_contact_box h1
+{
+  font-size: 15px; 
+}
+#c_name,#c_num
+{
+  font-size: 15px;
+}
+#add, #close
+{
+  width: 80px;
+}
+ 
+  #contact_header h1
+  {
+    font-size: 40px;
+    padding-top: 20px;
+    margin-left: 70px;
+  }
+
+  #search
+  {
+    margin-left: 70px;
+  }
+
+  #new_contact
+{
+  font-size: 60px;
+  bottom: 50px;
+  right: 40px;
+}
+}
+
+@media (max-width:669px)
+{
+  #main_all_contact_box
+  {
+    width: 100%;
+  }
+
+  #profile_box
+  {
+    display: none;
+  }
+
+  #all_contact_box
+  {
+    margin-left: 5px;
+    margin-top: -15px;
+  }
+ 
+  #contact_header h1
+  {
+    font-size: 40px;
+    padding-top: 10px;
+    margin-left: 5px;
+  }
+
+  #search
+  {
+    margin-left: 5px;
+  }
+
+  #new_contact
+  {
+    font-size: 40px;
+    bottom: 10px;
+  }
+
+  #add_contact_box
+  {
+    width: 90%;
+  }
+  #add_contact_box h1 
+  {
+    font-size: 30px;
+  }
+}
+
+@media (max-width:322px)
+{
+  #search
+  {
+    font-size: 20px;
+  }
+
+  #add_contact_box
+  {
+    width: 100%;
+  }
+  
+  #add_contact_box h1
+  {
+    font-size: 20px; 
+  }
+  #c_name,#c_num
+  {
+    font-size: 20px;
+  }
+  #add, #close
+  {
+    width: 80px;
+  }
+}
